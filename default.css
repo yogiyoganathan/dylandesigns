@@ -1,7 +1,6 @@
 ﻿body, html {
-	background: #1A1A1A;
+	background: #489792;
 	color: #A1A1A1;
-	font-family: Arial, Helvetica, sans-serif;
 	margin-top: 20px;
 }
 
@@ -39,33 +38,33 @@ h1, h2, h3 {
 }
 
 #logo h1 {
-	bottom: 0;
-	left:60px;
+	bottom: -7px;
+	left:70px;
+	font-size:40px;
 	position: absolute;
-	font: normal 36px Georgia, "Times New Roman", Times, serif;
+	text-transform: uppercase;
 }
 
 #logo h2 {
-	bottom: 2px;
+	bottom: -9px;
 	color: #444444;
-	font-size: 10px;
+	font-size: 20px;
 	font-weight: bold;
-	left: 60px;
+	left: 70px;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 	position:absolute;
 }
 
 #logo a {
-	text-decoration: none;
 	color: #F0F0F0;
+	text-decoration: none;
 }
 
 /* Menu */
 
 #menu {
 	width: 960px;
-	height: 60px;
+	height: 70px;
 	margin: 0 auto;
 }
 
@@ -90,14 +89,15 @@ h1, h2, h3 {
 	text-decoration: none;
 	text-align: center;
 	text-transform: uppercase;
-	font-size: 11px;
+	font-size:x-large;
 	font-weight: bold;
-	color: #07B6FE;
+/*	color: #07B6FE;*/
+color: #000;
 }
 
 #menu a:hover, #menu .active a {
-	background: #07B6FE;
-	color: #FFFFFF;
+	background: #fff;
+	color: #000;
 }
 
 #main{
@@ -105,14 +105,37 @@ h1, h2, h3 {
 	position: relative;
 }
 
-#main-form {
-	width: 400px;
-	
-	margin: 20px auto;
+#main p {
+	font-size:x-large;
+	color: #000;
 }
 
-#main img {
-	margin-top:20px;
+#main-thanks, #main-designs {
+	margin-top: 100px;	
+}
+
+#main-thanks{
+	position:relative;	
+}
+
+#main-thanks p{
+	margin-left: 300px;
+}
+
+#main-form {
+	color:#000;
+	font-size:x-large;
+	margin: 20px auto;
+	width: 400px;
+}
+
+#main-contents img {
+	margin-top:100px;
+	border: 2px solid white;
+}
+
+#main-contents p {
+	margin-top:190px;
 }
 
 ul.thumb {
@@ -153,7 +176,7 @@ ul.thumb li img {
 #footer {
 	margin: 120px auto;
 	border-top: 1px solid #fff;
-	color: #FFFFFF;
+	color: #000;
 }
 
 #footer img {
@@ -164,20 +187,21 @@ ul.thumb li img {
 
 #footer p {
 	text-align: center;
-	font-size:small;
+	font-size:medium;
 }
 
 #footer a {
-	color: #07B6FE;
+	color: #fff;
 	text-decoration: none;
 }
 
 #footer a:hover {
-	color: #838383;
+	color: #000;
 	text-decoration: none;
 }
 
 .form-input { margin: 5px 0; }
+.form-input .btn { margin: 20px 0; }
 .form-input label { display: block; margin-bottom: 10px; }
 .form-input-capatcha { height: 50px; width: 393px; }
 .form-input-capatcha-input label { display: block; margin-bottom: 10px; }
