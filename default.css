@@ -4,64 +4,52 @@
 	margin-top: 20px;
 }
 
-h1, h2, h3 {
-	color: #AA2808;
-}
-
 /* Wrapper */
-
 #wrapper {
 	margin: 0 auto;
 	width:960px;
+	height: 600px;
 }
 
 /* Header */
-
 #header {
 	border-bottom: 1px solid #fff;
-	margin: 0 auto;
-}
-
-/* Logo */
-
-#logo {
-	height: 76px;
+	height: 40px;
 	position: relative;
-	width: 400px;
 }
 
-#logo img {
+#header img {
 	bottom: 2px;
-	height: 60px;
+	height: 40px;
 	left:0;
 	position: absolute;
 }
 
-#logo h1 {
-	bottom: -7px;
-	left:70px;
-	font-size:40px;
+#header h1 {
+	color: #AA2808;
+	font-size:25px;
+	font-weight: bold;
+	left:45px;
 	position: absolute;
 	text-transform: uppercase;
+	top: -10px;
 }
 
-#logo h2 {
-	bottom: -9px;
-	color: #444444;
-	font-size: 20px;
-	font-weight: bold;
-	left: 70px;
+#header h2 {
+	bottom: 3px;
+	color: #AA2808;
+	font-size: 15px;
+	left: 45px;
 	letter-spacing: 2px;
 	position:absolute;
 }
 
-#logo a {
+#header a {
 	color: #F0F0F0;
 	text-decoration: none;
 }
 
 /* Menu */
-
 #menu {
 	width: 960px;
 	height: 70px;
@@ -101,7 +89,6 @@ color: #000;
 }
 
 #main{
-	height: 450px;
 	position: relative;
 }
 
@@ -110,32 +97,42 @@ color: #000;
 	color: #000;
 }
 
-#main-thanks, #main-designs {
-	margin-top: 100px;	
+#main-contents {
+	margin: 70px auto;
+	width: 500px;
+}
+
+#main-designs {
+	width: 691px;
+	margin: 70px auto;
+	padding: 10px 20px;
+}
+
+#main-designs a {
+	outline: none;	
+	margin-right: 20px;
+}
+
+#main-designs a img {
+	border: 1px solid #CCC;
+	padding: 2px;	
+	margin: 10px 5px 10px 0;
 }
 
 #main-thanks{
-	position:relative;	
+	margin: 100px auto;
+	width: 750px;
 }
 
-#main-thanks p{
-	margin-left: 300px;
+#main-contents img {
+	border: 2px solid white;
 }
 
 #main-form {
 	color:#000;
-	font-size:x-large;
+	font-size:medium;
 	margin: 20px auto;
-	width: 400px;
-}
-
-#main-contents img {
-	margin-top:100px;
-	border: 2px solid white;
-}
-
-#main-contents p {
-	margin-top:190px;
+	width: 500px;
 }
 
 ul.thumb {
@@ -147,13 +144,13 @@ ul.thumb {
 ul.thumb li {
 	float: left;
 	position: relative;
-	width: 210px;
-	height: 210px;
+	width: 110px;
+	height: 110px;
 }
 
 ul.thumb li img {
-	width: 200px; 
-	height: 200px;
+	width: 100px; 
+	height: 100px;
 	padding: 5px;
 	position: absolute;
 	left: 0; 
@@ -174,7 +171,7 @@ ul.thumb li img {
 /* Footer */
 
 #footer {
-	margin: 120px auto;
+	margin: 20px auto;
 	border-top: 1px solid #fff;
 	color: #000;
 }
@@ -186,6 +183,7 @@ ul.thumb li img {
 }
 
 #footer p {
+	margin-top:20px;
 	text-align: center;
 	font-size:medium;
 }

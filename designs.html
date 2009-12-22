@@ -16,7 +16,11 @@ Description: A two-column fixed-width template suitable for small websites.
 <title>Bead Jewellery - Designs</title>
 <meta name="keywords" content="" />
 <meta name="description" content="" />
+
+<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.0.0/build/cssreset/reset-min.css" /> 
 <link href="default.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="./fancybox/jquery.fancybox-1.2.6.css" media="screen" />
+
 </head>
 <body>
 <div class="tk-swister" id="wrapper">
@@ -37,31 +41,40 @@ Description: A two-column fixed-width template suitable for small websites.
     </ul>
   </div>
   <div id="main">
-  <div id="main-designs">
-  	<ul class="thumb">
-		<li><img src="images/main.jpg" alt="Black Earings" /></li>
-		<li><img src="images/main.jpg" alt="Black Earings" /></li>
-		<li><img src="images/main.jpg" alt="Black Earings" /></li>
-		<li><img src="images/main.jpg" alt="Black Earings" /></li>	
-	</ul>
-  </div>
+	  <div id="main-designs">
+		<p>
+			<a class="zoom" rel="group" title="Black Earings" href="images/main.jpg"><img src="images/thumb.jpg" alt="" /></a>
+			<a class="zoom" rel="group" title="Black Earings" href="images/main.jpg"><img src="images/thumb.jpg" alt="" /></a>
+			<a class="zoom" rel="group" title="Black Earings" href="images/main.jpg"><img src="images/thumb.jpg" alt="" /></a>
+		</p>
+  	</div>
   </div>
   <!-- end div#menu -->
   <div id="footer">
 	<img src="images/catright.png" alt="" />
-    <p>This page was created using XHTML and CSS by <a href="http://www.iancrowther.co.uk/">Ian Crowther</a>.
+    <p>This page was created using XHTML and CSS by <a href="http://www.iancrowther.co.uk/">Ian Crowther</a>.</p>
   </div>
   <!-- end div#footer -->
 </div>
 <!-- end div#wrapper -->
 <script type="text/javascript" src="http://use.typekit.com/cyc3nau.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<script type="text/javascript" src="zoomer.js"></script> 
-<script type="text/javascript">
-$(document).ready(function(){
- 	$('ul.thumb li').Zoomer({speedView:200,speedRemove:400,altAnim:true,speedTitle:400,debug:false});
-});
-</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="./fancybox/jquery.fancybox-1.2.6.pack.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a.zoom").fancybox();
+
+			$("a.zoom1").fancybox({
+				'overlayOpacity'	:	0.7,
+				'overlayColor'		:	'#FFF'
+			});
+
+			$("a.zoom2").fancybox({
+				'zoomSpeedIn'		:	500,
+				'zoomSpeedOut'		:	500
+			});
+		});
+	</script>
 </body>
 </html>
